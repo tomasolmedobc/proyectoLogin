@@ -1,0 +1,9 @@
+USE usuarios_db;
+
+CREATE TABLE users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    user VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    rol VARCHAR(255) NOT NULL,
+    pass VARCHAR(255) NOT NULL
+);
