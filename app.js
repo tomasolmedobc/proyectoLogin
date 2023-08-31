@@ -10,6 +10,7 @@ app.use(express.json());
 const dotenv = require('dotenv');
 dotenv.config({path:'./env/.env'});
 
+
 //4 - El directorio public
 app.use('/resources', express.static('public'));
 app.use('/resources', express.static(__dirname + '/public'));
@@ -29,7 +30,7 @@ app.use(session({
 }));
 
 //8 - Invocamos al modulo de conexion de la DB
-const connection = require('./database/db');
+const connection = require('./config/db');
 
 //9 - Estableciendo las rutas
 app.get('/login', (req, res) => {

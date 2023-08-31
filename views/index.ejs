@@ -13,9 +13,9 @@
         <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
         <% if (login) { %>
             <a href="logout" class="a-logout">Logout</a>
-        <%} else{ %>
-            <a href="login" class="a-login"><i></i> Login</a>
-        <% } %>
+            <% } else { %>
+                <a href="login" class="a-login"><i></i> Login</a>
+            <% } %>
     </div>
     <h1>Página de Inicio</h1>
     <% if (login) { %>
