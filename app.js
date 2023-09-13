@@ -29,8 +29,13 @@ app.use(session({
     saveUninitialized:true
 }));
 
+//Llama router
+app.use('/', require('./router/router'));
+
 //8 - Invocamos al modulo de conexion de la DB
 const connection = require('./config/db');
+
+
 
 //9 - Estableciendo las rutas
 app.get('/login', (req, res) => {
