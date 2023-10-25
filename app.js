@@ -34,8 +34,8 @@ app.use('/', require('./router/router'));
 
 //8 - Invocamos al modulo de conexion de la DB
 const connection = require('./config/db');
-
-
+const connection2 = require('./config/db2');
+const auth = require('./auth/auth')
 
 //9 - Estableciendo las rutas
 app.get('/login', (req, res) => {
